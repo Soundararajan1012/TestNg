@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite Test]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="https://www.facebook.com"/>
+  <test thread-count="5" name="parametertest(failed)">
+    <classes>
+      <class name="parallelTesting.ParameterSample">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="findLogo"/>
+          <include name="findPageTitle"/>
+          <include name="homePageLogin"/>
+        </methods>
+      </class> <!-- parallelTesting.ParameterSample -->
+    </classes>
+  </test> <!-- parametertest(failed) -->
+  <test thread-count="5" name="parameterstest(failed)">
+    <classes>
+      <class name="parallelTesting.ParameterSample">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="findLogo"/>
+          <include name="findPageTitle"/>
+          <include name="homePageLogin"/>
+        </methods>
+      </class> <!-- parallelTesting.ParameterSample -->
+    </classes>
+  </test> <!-- parameterstest(failed) -->
+</suite> <!-- Failed suite [Suite Test] -->
